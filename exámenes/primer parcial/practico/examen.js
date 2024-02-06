@@ -5,7 +5,8 @@ console.log("¿Qué información desea consultar? \n1) Lista de todos los pendie
 
 const axios = require("axios");
 
-var value;
+var value=1;//No encontre otra manera que no sea prompt para que el usuario pueda escoger la opcion que quiera
+//Hay que cambiar el valor de value direcatmente aqui en el codigo para ver todas las opciones del menu:(
 switch (value) {
     case 1://Todos los pendientes (Solo ID's)
         axios.get("https://jsonplaceholder.typicode.com/todos").then(({data}) => {
